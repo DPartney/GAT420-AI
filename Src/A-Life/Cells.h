@@ -4,8 +4,7 @@
 class Cells : public Environment
 {
 public:
-	Cells(int width, int height, std::shared_ptr<class Texture> texture) :
-		Environment{ width, height, texture } {}
+	Cells(int width, int height, std::shared_ptr<class Texture> texture) : Environment{ width, height, texture } {}
 
 	bool Initialize() override;
 	void Step() override;
